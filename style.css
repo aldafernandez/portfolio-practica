@@ -106,5 +106,7 @@ body{
     background-color: #ee46c962;
     display: flex;
     flex-direction: column;
+    justify-items: center;
+    align-items: center;
     
 }
