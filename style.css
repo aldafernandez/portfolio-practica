@@ -57,8 +57,16 @@ body{
     margin-bottom: 15px;
 }
 
+.tecno-icono{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 3rem;
+    
+}
 .icono{
-   width:150px;
+   width:80px;
+   border-radius: 3rem;
    padding:10px;
 }
 
@@ -96,6 +104,6 @@ body{
 
 
 footer{
-    background-color: blue;
+    background-color: #ee46c962;
    
 }
