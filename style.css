@@ -91,8 +91,7 @@ body{
     line-height: 1.5;
     margin-top: 5px;
 }
-.info{
-    text-decoration: none;
+.texto-de-boton{
     display: inline-block;
     padding: 10px;
     margin-top: 10px;
@@ -103,7 +102,9 @@ body{
 
 
 
-footer{
+#contacto{
     background-color: #ee46c962;
-   
+    display: flex;
+    flex-direction: column;
+    
 }
