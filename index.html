@@ -41,48 +41,51 @@
                 <h2 class="titulo"> Proyectos </h2>
                 <section id="proyectos">
                     <div class="card">
-                        <img width="300" class="proyectologo" src="./imagenes/proyecto 1.webp" alt="logo proyecto">
-                        <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                        <img width="300" class="proyecto-logo" src="./imagenes/proyecto 1.webp" alt="logo proyecto">
+                        <p class="texto-card">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                         <a href="#" class="texto-de-boton">Ver más</a>
                     </div>
                     <div class="card">
-                        <img width="300" class="proyectologo" src="./imagenes/proyecto 2.jpg" alt="logo proyecto">
-                        <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                        <img width="300" class="proyecto-logo" src="./imagenes/proyecto 2.jpg" alt="logo proyecto">
+                        <p class="texto-card">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                         <a href="#" class="texto-de-boton">Ver más</a>
                     </div>
                     <div class="card">
-                        <img width="300" class="proyectologo" src="./imagenes/proyecto 3.jpg" alt="logo proyecto">
-                        <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                        <img width="300" class="proyecto-logo" src="./imagenes/proyecto 3.jpg" alt="logo proyecto">
+                        <p class="texto-card">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                         <a href="#" class="texto-de-boton">Ver más</a>
                     </div>
                     <div class="card">
-                        <img width="300" class="proyectologo" src="./imagenes/proyecto 3.jpg" alt="logo proyecto">
-                        <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                        <img width="300" class="proyecto-logo" src="./imagenes/proyecto 3.jpg" alt="logo proyecto">
+                        <p class="texto-card">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                         <a href="#" class="texto-de-boton">Ver más</a>
                     </div>
                 </section>
             </main>
 
             <footer>
-                <section id="contacto" class="formulario">
+                <div id="contacto" class="formulario">
                     <div>
-                        <p> Empecemos a programar!</p>
+                        <p class="contacto-texto"> Empecemos a programar!</p>
                         <form class="form" method="GET" action="formulario.html">
                             <label for="nombreyapellido">Nombre y Apellido</label>
-                            <input type="text" placeholder="Ingrese su nombre" required> 
+                            <input class="placeholder" type="text" placeholder="Ingrese su nombre" required> 
                             <label for="email">Email</label>
-                            <input type="email" placeholder="Ingrese su email" required>
+                            <input class="placeholder" type="email" placeholder="Ingrese su email" required>
                             <label for="mensaje">Mensaje</label>
-                            <textarea name="mensaje" id="" placeholder="Ingrese su mensaje" required></textarea>
+                            <textarea class="placeholder" name="mensaje" placeholder="Ingrese su mensaje" required></textarea>
                             <p>Subir un archivo (opcional) <input type="file" name="file" id=""></p>
+                            <button class="boton" type="submit">Enviar mensaje</button>
                         </form>
                     </div>
                     <div class="redes">
-                        <p>Seguime en redes</p>
-                        <img width="70" src="/imagenes/linkedin_3983888.png" alt="logo linkedin">
-                        <img width="70" src="./imagenes/instagram_2111463.png" alt="">
+                        <p class="texto-redes">Seguime en redes</p>
+                        <ul class="lista-redes">
+                            <li><a href="#"><img class="logo-redes" src="/imagenes/linkedin_3983888.png" alt="logo linkedin"></a></li>
+                            <li><a href="#"><img class="logo-redes" src="./imagenes/instagram_2111463.png" alt="logo instagram"></a></li>
+                        </ul>
                     <div/>
-                </section>
+                </div>
             </footer>
 
         </body>

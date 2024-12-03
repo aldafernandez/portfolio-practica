@@ -5,7 +5,6 @@
     list-style: none;
     text-decoration: none;
 }
-
 body{
     font-family: "Quicksand", sans-serif;  
 } 
@@ -19,27 +18,27 @@ body{
     justify-content:space-evenly;
     padding: 2rem;
     font-size: 1.5rem;
-    
+    & a{
+        color: rgb(24, 22, 22);
+    }
 }
-.nav a{
-    color: rgb(24, 22, 22);
-}
-
 .inicio{
     display: flex;
     padding-block: 3rem;
     margin-top: 0.75rem;
     padding-inline: 15%;
-}
-.perfil{
-    width: 250px;
-}
-.perfil-texto h1  {
-    margin-block: 2rem .5rem;
-}
-.perfil-texto p {
-    margin-block: 2rem;
-    
+
+    & .perfil{
+        width: 250px;
+    }
+
+    & .perfil-texto h1  {
+        margin-block: 2rem .5rem;
+    }
+
+    & .perfil-texto p {
+        margin-block: 2rem;
+    }
 }
 .boton{
     font-family: "Quicksand", sans-serif;
@@ -47,30 +46,28 @@ body{
     background-color: #ee46c962;
     width: 8rem;
     padding: 0.25rem;
-}
-.boton img{
-    width: 18px;
+
+    & img{
+        width: 18px;
+    }
 }
 .titulo{
     text-align: center;
     font-size: 40px;
     margin: 3rem;
-    border-top: 1px solid;
 }
-
 .tecno-icono{
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     margin: 3rem;
-    
-}
-.icono{
-   width:80px;
-   border-radius: 3rem;
-   padding:10px;
-}
 
+    & .icono{
+        width:80px;
+        border-radius: 3rem;
+        padding:10px;
+     }
+}
 #proyectos{
     width: 100%;
     display: flex;
@@ -78,39 +75,65 @@ body{
     max-width: 1100px;
     margin: auto;
     flex-wrap:wrap ;
-    
-}
-.card{
-    width: 350px;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    text-align: center;
-}
-.card img{
-    width: 100%;
-    height: 210px;
-}
-.texto{
-    line-height: 1.5;
-    margin-top: 5px;
-}
-.texto-de-boton{
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: #4d2e2b;
-    border: 1px solid;
-    border-radius: 10px;
-}
+    margin-bottom: 3rem;
 
-
-
+    & .card{
+        width: 350px;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        text-align: center;
+        
+        & img{
+            width: 100%;
+            height: 210px;
+        }
+        
+        & .texto-card{
+            line-height: 1.5;
+            margin-top: 5px;
+        }
+        & .texto-de-boton{
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+            color: #4d2e2b;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+    }
+} 
 #contacto{
     background-color: #ee46c962;
     display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    padding: 3rem;
+
+    & .contacto-texto{
+        font-weight: bolder;
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+}
+.form{
+    display: flex;
     flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    
+    gap: .75rem;
+}
+.placeholder{
+   min-height: 25px;
+}
+.texto-redes{
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+.lista-redes{
+    display: flex;
+    gap: 10px;
+
+    & .logo-redes{
+        width: 70px;
+        border-radius: 1.5rem;
+    }
 }
