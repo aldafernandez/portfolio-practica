@@ -1,139 +1,102 @@
+:root{
+    --backgroundbody:#025951;
+
+    --primary:#e5e7eb;
+
+    --font-size1:3rem;
+    --font-size2:1.5rem;
+}
 *{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: "Quicksand", sans-serif; 
 }
-body{
-    font-family: "Quicksand", sans-serif;  
-} 
-#header{
-    box-shadow: 0px 8px 20px rgb(78, 42, 42) ;
-    
-}
-.nav {
-    background-color: #ee46c962;
-    display: flex;
-    justify-content:space-evenly;
-    padding: 2rem;
-    font-size: 1.5rem;
-    & a{
-        color: rgb(24, 22, 22);
-    }
-}
-.inicio{
-    display: flex;
-    padding-block: 3rem;
-    margin-top: 0.75rem;
-    padding-inline: 15%;
-
-    & .perfil{
-        width: 250px;
-    }
-
-    & .perfil-texto h1  {
-        margin-block: 2rem .5rem;
-    }
-
-    & .perfil-texto p {
-        margin-block: 2rem;
-    }
-}
-.boton{
-    font-family: "Quicksand", sans-serif;
-    border-radius: 0.25rem;
-    background-color: #ee46c962;
-    width: 8rem;
-    padding: 0.25rem;
-
-    & img{
-        width: 18px;
-    }
-}
-.titulo{
-    text-align: center;
-    font-size: 40px;
-    margin: 3rem;
-}
-.tecno-icono{
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin: 3rem;
-
-    & .icono{
-        width:80px;
-        border-radius: 3rem;
-        padding:10px;
-     }
-}
-#proyectos{
+body{ 
+    background-color: var(--backgroundbody);
+    color: var(--primary);
     width: 100%;
-    display: flex;
-    justify-content: center;
-    max-width: 1100px;
-    margin: auto;
-    flex-wrap:wrap ;
-    margin-bottom: 3rem;
-
-    & .card{
-        width: 350px;
-        margin: 20px;
-        border-radius: 6px;
-        overflow: hidden;
-        text-align: center;
-        
-        & img{
-            width: 100%;
-            height: 210px;
-        }
-        
-        & .texto-card{
-            line-height: 1.5;
-            margin-top: 5px;
-        }
-        & .texto-de-boton{
-            display: inline-block;
-            padding: 10px;
-            margin-top: 10px;
-            color: #4d2e2b;
-            border: 1px solid;
-            border-radius: 10px;
-        }
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    
 } 
-#contacto{
-    background-color: #ee46c962;
-    display: flex;
-    justify-content: space-between;
-    height: fit-content;
-    padding: 3rem;
+#header {grid-area: header;}
+#main {grid-area: main;}
+#footer {grid-area: footer;}
 
-    & .contacto-texto{
-        font-weight: bolder;
-        font-size: 30px;
-        margin-bottom: 18px;
-    }
-}
-.form{
+#header{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: .75rem;
-}
-.placeholder{
-   min-height: 25px;
-}
-.texto-redes{
-    margin-bottom: 1rem;
-    font-size: 18px;
-}
-.lista-redes{
-    display: flex;
-    gap: 10px;
-
-    & .logo-redes{
-        width: 70px;
-        border-radius: 1.5rem;
+    padding-inline: 20rem ;
+    padding-top: 5rem;
+    gap: 1.5rem;
+    h1{
+        font-size: var(--font-size1);
+    } 
+    h2{
+        font-size: var(--font-size2);
+    }
+    & .redes-contacto{
+        & a{
+        color: var(--primary);
+        }
+        & i{
+            padding: .5rem;
+        }
     }
 }
+
+ .nav-item{
+    padding: .5rem;
+    & a{
+        padding-inline: .5rem;
+        color: var(--primary);
+    } 
+}
+
+.nav-text:hover{text-decoration: underline;}
+
+#presentacion{
+    padding-block:4rem;
+    & p{
+        padding: 1rem;
+        line-height: 2rem;
+    }
+}
+.contacto-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    & .form{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        gap: 1rem;
+        & .input{
+            background-color: #878787;
+            border: none;
+            padding: .5rem;
+            font-size: 1rem;
+            border-radius: .5rem;
+        }
+        & textarea{
+            resize: none;
+            field-sizing: content;
+        }
+    }
+}
+
+.input::placeholder{color: var(--primary);}
+.input:focus{outline: 2px solid #8B8CFF;}
+.button:hover{font-weight: 900;}
