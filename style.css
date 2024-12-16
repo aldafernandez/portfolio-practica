@@ -23,7 +23,7 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 580px 2fr 300px;
     grid-template-areas: 
     "header header header"
     "main main main"
@@ -38,8 +38,9 @@ body{
 #header{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    padding-inline-start: 20rem;
+    padding-inline-start: 15rem;
     padding-block: 3rem;
     gap: 1.5rem;
     & h1{
@@ -83,14 +84,13 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: 400px;
-    gap: 1rem;
+    gap: .5rem;
     justify-content: center;
     position: relative;
     & .subtitle{
         font-size: 25px;
         position: absolute;
-        left: 40px;
-        top:0;
+        transform: translateX(63px);
     }
     & .card-proyectos{
         box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
@@ -106,7 +106,7 @@ body{
             text-align: justify;
             padding: 1rem;
         }
-        & .button-card{
+        & .button-card {
             width: 100%;
             padding:5px;
             border: 1px solid var(--backgroundbody);
@@ -136,10 +136,59 @@ body{
         gap: 1.5rem;
     }
 }
+
 .container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    display: flex;
     justify-content: center;
-    
+    padding-block: 5rem;
+    gap: 2rem;
+    & .form-texto{
+        padding-block-end:1rem;
+        font-size: 20px;
+    }
+    & .form{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        gap: 1.5rem;
+        & .input{
+            border: none;
+            border-radius: 10px;
+            padding: .5rem;
+            resize: none;
+        }
+        & .button{
+            width: 100%;
+            padding:5px;
+            border: 1px solid var(--backgroundbody);
+            border-radius: 10px;
+            background-color: #247e75;
+        }
+    }  
+    & .redes-contact{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        & .fa-icon{
+            display: flex;
+            gap: 2rem;
+            & a{
+                color: var(--primary);
+            }
+        }
+    } 
+}
+.button:hover{
+    font-weight: bolder;
+}
+
+.input:focus{
+    outline: 2px solid #247e75;
+}
+
+@media(max-width:700px){
+    #header{
+        padding-inline-start: 2rem;
+    }
 }
