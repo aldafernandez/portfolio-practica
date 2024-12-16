@@ -202,8 +202,12 @@ body{
     #proyectos{
         display: flex;
         flex-wrap: wrap;
-        transition: none;
         height: fit-content;
+    }
+}
+@media(max-width:1000px){
+    .card-proyectos:hover{
+        transform: none;
     }
 }
 
