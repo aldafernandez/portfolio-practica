@@ -83,14 +83,15 @@ body{
     height: 550px;
     display: grid;
     grid-template-columns: repeat(3, 300px);
-    grid-template-rows: 400px;
+    grid-template-rows: repeat(3, 400px);
+    grid-auto-rows: 400px;
     gap: .5rem;
     justify-content: center;
     position: relative;
     & .subtitle{
         font-size: 25px;
         position: absolute;
-        transform: translateX(63px);
+        transform: translateX(40px);
     }
     & .card-proyectos{
         box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
@@ -190,5 +191,26 @@ body{
 @media(max-width:700px){
     #header{
         padding-inline-start: 2rem;
+    }
+}
+@media(max-width:1290px){
+    #proyectos .subtitle{
+        color:transparent;
+    }
+}
+@media(max-width:1000px){
+    #proyectos{
+        display: flex;
+        flex-wrap: wrap;
+        transition: none;
+        height: fit-content;
+    }
+}
+
+@media(max-width:675px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
