@@ -1,0 +1,28 @@
+:root{
+
+    /*------Colors-------*/
+    --backgroundbody:#025951;
+
+    --primary:#e5e7eb;
+
+    /*------Font-------*/
+    --font-size1:3rem;
+    --font-size2:1.5rem;
+    --font-size3:1.75rem;
+
+    --font-primary:"Quicksand", sans-serif;
+    
+}
+.flex-center { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.flex { display: flex; }
+.column { flex-direction: column; }
+.wrap { flex-wrap: wrap; }
+.justify { justify-content: center; }
+.align { align-items: center; }
+
+.grid { display: grid; }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
