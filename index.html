@@ -6,74 +6,32 @@
             <title>Portfolio Aldana Fernandez</title>
             <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="library.css">
-            <link rel="stylesheet" href="./style.css">
+            <link rel="stylesheet" href="style.css">
             <script src="https://kit.fontawesome.com/c59426bbb3.js" crossorigin="anonymous"></script>
             <link rel="icon" href="favicon.icon.ico">
         </head>
-        <body>
+        <body class="bg-1">
             <header id="header">
-                <h1>Aldana Fernandez</h1>
-                <h2>Web Developer Full Stack</h2>
-                <p>Front End y Back End Developer</p>
-                <h3>Titulación</h3>
-                <div class="estudios-icon">
-                    <i class="fa-solid fa-graduation-cap "></i>
-                    <p>Diplomatura en Progracaión Web Full Stack</p>
-                </div>
-                <div class="estudios-icon">
-                    <i class="fa-solid fa-building-columns"></i>
-                    <p>Universidad Tecnologica Nacional</p>
-                </div>
-                    
-                
-                <nav class="nav">
-                    <ul>
-                        <li class="nav-item">
-                            <i class="fa-solid fa-circle-right fa-beat"></i>
-                            <a class="nav-text" href="#presentacion">Presentación</a>
-                        </li>
-                        <li class="nav-item">
-                            <i class="fa-solid fa-circle-right fa-beat"></i>
-                            <a class="nav-text" href="#proyectos">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <i class="fa-solid fa-circle-right fa-beat"></i>
-                            <a class="nav-text" href="#tecnologias">Tecnologias</a>
-                        </li>
-                        <li class="nav-item">
-                            <i class="fa-solid fa-circle-right fa-beat"></i>
-                            <a class="nav-text" href="#footer">Contacto</a>
-                        </li>
+                <nav class="bg-2 pad-1 ">
+                    <ul class="flex-center end gap-2 m-rigth-7">
+                        <li><a class="btn-primary hover-1" href="pages/proyectos.html">Proyectos</a></li>
+                        <li><a class="btn-primary hover-1" href="pages/contacto.html">Contacto</a></li>
                     </ul>
-                </nav>
+                </nav>   
             </header>
-            
             <main id="main">
-                <div id="presentacion">
-                    <p class="parr-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quod numquam maxime voluptate hic. In at officiis, nesciunt, laboriosam aut maiores consequatur, repellat quibusdam ex autem dolores! Tempore laudantium officiis sapiente quasi dolor, magni molestias, adipisci eos cumque reiciendis consectetur nam pariatur, labore neque officia aliquam ea quisquam vero reprehenderit. Omnis dolores doloribus eaque quia dolore id nostrum commodi fuga impedit unde quas iure, cupiditate inventore autem fugiat reprehenderit cum vero eligendi enim porro soluta magni dolor nemo. Nobis, delectus. Debitis dolorem ullam itaque reiciendis rem beatae omnis magnam vel minima, eum sint nam labore praesentium deleniti libero odit ducimus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quod numquam maxime voluptate hic. In at officiis, nesciunt, laboriosam aut maiores consequatur, repellat quibusdam ex autem dolores! Tempore laudantium officiis sapiente quasi dolor, magni molestias, adipisci eos cumque reiciendis consectetur nam pariatur, labore neque officia aliquam ea quisquam vero reprehenderit. Omnis dolores doloribus eaque quia dolore id nostrum commodi fuga impedit unde quas iure, cupiditate inventore autem fugiat reprehenderit cum vero eligendi enim porro soluta magni dolor nemo. Nobis, delectus. Debitis dolorem ullam itaque reiciendis rem beatae omnis magnam vel minima, eum sint nam labore praesentium deleniti libero odit ducimus.</p>
+                <div class="text-center color-1 pad-2">
+                    <h2 class="font-2">Hola soy Aldana Fernandez</h2>
+                    <h1 class="font-1">Desarrolladora Web Full Stack</h1>
+                </div>
+                <div class="container-index flex column">
+                    <p>Soy un desarrollador web apasionado por crear soluciones innovadoras. Como recién graduado de la Universidad Tecnológica Nacional, tengo experiencia en el diseño y desarrollo de aplicaciones web modernas utilizando tecnologías actuales como [HTML, CSS, JavaScript, React, Node.js, etc.].</p>
+                    <p>Siempre busco aprender y colaborar en proyectos que me desafíen, ya sea en equipo o de forma individual. Mi objetivo es aportar creatividad y calidad a cada proyecto mientras sigo desarrollando mis habilidades técnicas.</p>
                 </div> 
-                <div id="proyectos">
-                    <h3 class="subtitle">Proyectos</h3>
-                    <div class="card-proyectos">
-                        <img class="img-card" src="imagenes/proyecto1.jpg" alt="proyecto portada">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, ratione!</p>
-                        <button type="submit" class="button">Ver más</button>
-                    </div>
-                    <div class="card-proyectos">
-                        <img class="img-card" src="imagenes/proyecto2.jpg" alt="proyecto portada">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, ratione!</p>
-                        <button type="submit" class="button">Ver más</button>
-                    </div>
-                    <div class="card-proyectos">
-                        <img class="img-card" src="imagenes/proyecto3.jpg" alt="proyecto portada">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, ratione!</p>
-                        <button type="submit" class="button">Ver más</button>
-                    </div>
-                </div> 
-                <div id="tecnologias">
-                    <h3>Tecnologias y Programas</h3>
-                    <div class="icon-tec">
+                  
+                <div class="tecnologias flex-center-center column color-1 gap-2 p-top-3">
+                    <h3 class="font-1">Tecnologias y Programas</h3>
+                    <div class="icon-tec flex gap-2">
                         <i class="fa-brands fa-css3 fa-2x"></i>
                         <i class="fa-brands fa-bootstrap fa-2x"></i>
                         <i class="fa-brands fa-js fa-2x"></i>
@@ -85,29 +43,7 @@
                         <i class="fa-brands fa-font-awesome fa-2x"></i>
                         <i class="fa-brands fa-microsoft fa-2x"></i>
                     </div>
-                </div> 
-            </main>
-            <footer id="footer">
-                <div class="container">
-                    <div class="contact-form">
-                        <p class="form-texto"> Mandame tu consulta <i class="fa-solid fa-square-envelope"></i></p>
-                        <form class="form">
-                            <input type="text" placeholder="Ingrese su nombre" class="input" required>
-                            <input type="email" placeholder="Correo electrónico" class="input" required>
-                            <textarea placeholder="Mensaje" class="input" rows="6" required></textarea>
-                            <input type="submit" value="Enviar" class="input button">
-                        </form>
-                    </div>
-                    <div class="redes-contact"> 
-                        <h4>Visitá mis redes sociales</h4>
-                        <div class="fa-icon">
-                            <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-                        </div>
-                        
-                    </div>
                 </div>
-            </footer>
+            </main>
         </body>
     </html>
