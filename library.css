@@ -25,6 +25,13 @@
     --gap-6: 4rem;
     --max-gap: 6rem;
 
+    /*-----Radius-----*/
+    --radius-1: 16px;
+    --radius-2: 24px;
+    --radius-3: 40px;
+    --radius-4: 60px;
+    --radius-5: 100px;
+    --radius-max: 100%; 
 }
 
 /*-----------------------------Margin--------------------------------*/
@@ -133,20 +140,34 @@
 .font-3 { font-size: var(--font-size3); }
 
 /*----------------------------Width----------------------------------*/
+.vw-100 { width: 100vw; }
 .width-max { width: 100%; }
 
+/*----------------------------Height---------------------------------*/
+.vh-100 { height: 100vh; }
 
 /*----------------------------Display--------------------------------*/
+.none { display: none; }
+.flex { display: flex; }
 .flex-center { 
+    display: flex; 
+    justify-content: center; 
+}
+.flex-center-center { 
     display: flex; 
     justify-content: center; 
     align-items: center;
 }
-.flex { display: flex; }
 .column { flex-direction: column; }
 .wrap { flex-wrap: wrap; }
 .justify { justify-content: center; }
 .align { align-items: center; }
+.around { justify-content: space-around; }
+.between { justify-content: space-between; }
+.end { justify-content: flex-end; }
+
+.text-center { text-align: center; }
+
 
 .grid { display: grid; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
