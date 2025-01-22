@@ -55,6 +55,8 @@
 .drawer a:active, .drawer a:hover { background-color: var(--bg-2); }
 
 
+
+
 /*---------------------------Media Queries-------------------------------*/
 @media (max-width: 768px) {
     .open-menu {
