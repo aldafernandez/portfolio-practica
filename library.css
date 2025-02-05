@@ -1,15 +1,16 @@
 :root{
 
     /*------Colors-------*/
-    --bg-1:#a031a0;
-    --bg-2:#1e645d;
-    --bg-3:#082e2a;
+    --bg-1:#8b668b;
+    --bg-2:#3b797a;
+    --bg-3:#314b48;
     --bg-4:#05615b;
 
 
     --color-1:#c9cdd4;
     --color-2:#810505;
-    --color-3: #474747;    
+    --color-3: #474747;  
+    --color-4:black;  
 
     /*------Font-------*/
     --font-min: 1.1rem;
@@ -50,6 +51,7 @@
 .color-1 { color: var(--color-1); }
 .color-2 { color: var(--color-2); }
 .color-3 { color: var(--color-3); }
+.color-4 { color: var(--color-4); }
 
 /*-----------------------------Margin--------------------------------*/
 .margin-1 { margin: var(--gap-1); }
@@ -66,6 +68,7 @@
 .m-block { margin-block: var(--gap-5); }
 .m-block { margin-block: var(--gap-6); }
 
+.margin-min { margin-block-start: var(--min-gap);}
 .m-top-1 { margin-block-start: var(--gap-1); }
 .m-top-2 { margin-block-start: var(--gap-2); }
 .m-top-3 { margin-block-start: var(--gap-3); }
@@ -173,7 +176,11 @@
 /*-----------------------------Border------------------------------*/
 .border-none { border: none; }
 
-
+.border-box {
+    border: 1px solid #474747;
+    padding: 1rem;
+    border-radius: 8px;
+}
 /*--------------------------Font------------------------------------*/
 .font-min { font-size: var(--font-min); }
 .font-1 { font-size: var(--font-size1); }
@@ -221,12 +228,9 @@
     display: grid;
     grid-template-columns: 2fr 1fr; 
 }
-
-
 .grid-3 { 
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: 100px;
 }
 
 /*----------------------------Position-----------------------------------*/
@@ -235,9 +239,8 @@
 
 /*----------------------------Buttons-----------------------------------*/
 .btn-primary { 
-    background-color: #56d5d8;
-    background-image: linear-gradient(90deg, #56d5d8 0%, #d240d2 100%);  
-    padding: var(--min-gap); 
+    background-color: #5c5a5a;  
+    padding: var(--gap-1); 
     border-radius: var(--radius-1); 
 }
 
@@ -253,12 +256,12 @@
 .active-text:active, .active-text:hover { 
     background-color: var(--bg-3);
     border-radius: var(--radius-1);
-    padding: var(--min-gap);
     transition: all .3s;
     overflow: hidden;
 
 }
 
+.shadow:active, .shadow:hover { box-shadow: 0px 0px 5px 5px rgba(102,91,102,1); }
 /*----------------------------Resize-----------------------------------*/   
 .resize { resize: none;}
 
@@ -270,6 +273,9 @@
     padding: var(--min-gap);
     border: none;
 }
+
+/*------------------------------Cursor------------------------------*/
+.pointer { cursor: pointer;}
 
 
 
