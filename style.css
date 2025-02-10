@@ -38,3 +38,18 @@ body{
     background-color: transparent;
     border-radius: var(--radius-1);
 }
+@media (max-width:1200px) {
+    .div-tecno{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        icon-tec{
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width:850px) {
+    
+}
